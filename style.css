@@ -32,7 +32,7 @@ table, th, td {
   }
 
 .image-arrondie {
-  border-radius: 200px; /* arrondi des coins */
+  border-radius: 300px; /* arrondi des coins */
 }
 
 .zoom {

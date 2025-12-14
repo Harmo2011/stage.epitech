@@ -14,42 +14,8 @@ header, footer {
     text-align: center;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin:0 10px;
-}
-
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 .image-arrondie {
   border-radius: 200px; /* arrondi des coins */
-}
-
-.products {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
-}
-
-.product button {
-   margin-top: auto; /* pousse le bouton en bas */
-}
-
-.product img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
 }
 
 #cart div {
@@ -120,16 +86,6 @@ button:hover {
     font-size: 16px;        /* Taille du texte */
     outline: none;          /* Supprime le contour bleu au focus par défaut */
     transition: 0.3s;       /* Animation douce pour hover/focus */
-}
-
-.zoom {
-    width: 200px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.zoom:hover {
-    transform: scale(1.2);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 

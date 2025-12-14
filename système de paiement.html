@@ -9,13 +9,10 @@
 <body>
 
 <header>
-      <p><img src="images/logo wiki.jpg"alt="logo"class="image-arrondie"width="120"></p>
+      <p><img src="images/logo wiki.jpg"alt="logo"class="image-arrondie"width="100"></p>
       <h1>Bienvenue sur la boutique en ligne de L'Inventaire</h1>
       <nav>
-        <a href="index.html">Accueil</a>
-        <a href="histoire.html">Histoire</a>
-        <a href="jeux connus.html">Jeux les plus connus</a>
-        <a href="modèles nintendo.html">Aures consoles Nintendo</a>
+        <a href="index.html">Accueil - L'Inventaire</a>
       </nav>
     </header>
 
@@ -40,7 +37,6 @@
 <h1>Articles</h1>
 
 <input type="text" id="searchBar" placeholder="Rechercher un article...">
-<button id="searchBtn">Rechercher</button>
 <p> </p>
 <script>
     const searchBar = document.getElementById("searchBar");
@@ -58,42 +54,42 @@ searchBar.addEventListener("input", () => {
 <!-- PRODUITS -->
 <div class="products">
     <div class="product">
-        <img src="images/switch 1.jpg" alt="nintendo switch 1">
+        <img src="images/switch 1.jpg"class="zoom"alt="nintendo switch 1">
         <h3>Nintendo Switch 1</h3>
         <p>359.90 €</p>
         <button onclick="addToCart('Nintendo Switch 1', 359.90)">Ajouter au panier</button>
     </div>
 
     <div class="product">
-        <img src="images/switch light.jpg" alt="nintendo switch light bleu">
+        <img src="images/switch light.jpg"class="zoom"alt="nintendo switch light bleu">
         <h3>Nintendo switch light bleu</h3>
         <p>289.90 €</p>
         <button onclick="addToCart('Nintendo switch light', 289.90)">Ajouter au panier</button>
     </div>
    
     <div class="product">
-        <img src="images/switch light bleu.jpg" alt="nintendo switch light turquoise">
+        <img src="images/switch light bleu.jpg"class="zoom"alt="nintendo switch light turquoise">
         <h3>Nintendo switch light bleu turquoise</h3>
         <p>289.90 €</p>
         <button onclick="addToCart('Nintendo switch light bleu turquoise', 289.90)">Ajouter au panier</button>
     </div>
 
     <div class="product">
-        <img src="images/switch light jaune.jpg" alt="nintendo switch light dorée">
+        <img src="images/switch light jaune.jpg"class="zoom"alt="nintendo switch light dorée">
         <h3>Nintendo switch light dorée</h3>
         <p>299.90 €</p>
         <button onclick="addToCart('Nintendo switch light dorée', 299.90)">Ajouter au panier</button>
     </div>
 
     <div class="product">
-        <img src="images/nintendo oled.jpg" alt="nintendo switch oled">
+        <img src="images/nintendo oled.jpg"class="zoom"alt="nintendo switch oled">
         <h3>Nintendo switch OLED</h3>
         <p>399.90 €</p>
         <button onclick="addToCart('Nintendo switch OLED', 399.90)">Ajouter au panier</button>
     </div>
 
     <div class="product">
-         <img src="images/switch 2.jpg" alt="nintendo switch 2">
+         <img src="images/switch 2.jpg"class="zoom"alt="nintendo switch 2">
          <h3>Nintendo switch 2</h3>
          <p>499.90 €</p>
          <button onclick="addToCart('Nintendo switch 2', 499.90)">Ajouter au panier</button>
@@ -108,7 +104,7 @@ searchBar.addEventListener("input", () => {
 <div id="cart"></div>
 <p id="total"><strong>Total : 0 €</strong></p>
 <button onclick="payCart()">Payer</button>
-
+<p> </p>
 <!-- JAVASCRIPT DIRECTEMENT DANS LE HTML -->
 <script>
     let cart = [];
@@ -154,9 +150,7 @@ searchBar.addEventListener("input", () => {
         updateCart();
     }
 </script>
-<h3>A propos de L'Inventaire</h3>
-<p>Scanner ce QR code pour vous rendre sur site : </p>
-<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://Harmo2011.github.io/stage.epitech" alt="QR"id="qr"></p>
+
  <footer>
         <p>2025 - Boutique en ligne - L'Inventaire</p>
     </footer>
